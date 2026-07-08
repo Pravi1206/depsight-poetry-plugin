@@ -6,8 +6,7 @@ from pathlib import Path
 from depsight.core.plugins.base import BasePlugin
 from depsight.core.plugins.dependency import Dependency
 
-# TODO: RENAME "MyPlugin" TO "NpmPlugin"
-class MyPlugin(BasePlugin):
+class PoetryPlugin(BasePlugin):
     """Example third-party plugin for depsight."""
 
     def __init__(self) -> None:

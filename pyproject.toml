@@ -6,16 +6,16 @@ build-backend = "hatchling.build"
 packages = ["src/myplugin"] # TODO: REPLACE WITH "src/npm"
 
 [project]
-name = "depsight-third-party-plugin" # TODO: RENAME TO "depsight-npm-plugin"
+name = "depsight-poetry-plugin"
 version = "0.1.0"
-description = "A third-party plugin template for depsight"
+description = "A poetry plugin for depsight"
 requires-python = ">=3.12"
 dependencies = [
-    "depsight==1.3.0",
+    "depsight==1.3.0"
 ]
 
 [project.entry-points."depsight.plugins"]
-myplugin = "myplugin.myplugin:MyPlugin" # TODO: REPLACE WITH "npm.npm:NPMPlugin"
+poetry = "poetryplugin.poetryplugin:PoetryPlugin"
 
 [dependency-groups]
 dev = [
