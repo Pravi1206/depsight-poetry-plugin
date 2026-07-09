@@ -14,17 +14,14 @@ class PoetryPlugin(BasePlugin):
 
     @property
     def name(self) -> str:
-        # TODO: Replace the name to "npm"
-        return "myplugin"
+        return "poetry"
 
     @property
     def dependency_files(self) -> tuple[str, ...]:
-        # TODO: Add "package-lock.json"to the tuple
-        return ("",)
+        return ("poetry.lock","pyproject.toml")
 
     @property
     def default_file(self) -> str:
-        # TODO: Return "package-lock.json" once dependency_files is updated
         return self.dependency_files[0]
 
     def collect(self, project_dir: str | Path, _file: str | None = None) -> None:
